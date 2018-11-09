@@ -1,0 +1,8 @@
+{
+  "name": "sass-library",
+  "version": "1.0.0",
+  "description": "Sass library to manage project with a theme",
+  "main": "index.js",
+  "author": "jf-swain",
+  "license": "MIT"
+}
