@@ -1,0 +1,17 @@
+@import 'true';
+@import '../../utils/_color.function';
+
+$c: (
+  'default': #fff000
+);
+
+@include describe('color function') {
+  @include it('should return a color by a name') {
+    @include assert-equal(color('default', $c), #fff000);
+  }
+
+  @include it('should return a null and a debug message') {
+    @include assert-equal(color('white', $c), null);
+    @include assert-false(color('white', $c), #fff000);
+  }
+}

@@ -1,0 +1,13 @@
+/// @name color
+/// @group utils
+/// @param {string} $var - colors name
+/// @param {variable} $map - map which define colors
+@function color($var, $map: $colors) {
+  @if map-has-key($map, $var) {
+    @return map-get($map, $var);
+  }
+
+  @debug  "`#{$var}` doesn't exist in the color's map";
+
+  @return null;
+}
