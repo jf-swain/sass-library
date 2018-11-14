@@ -20,20 +20,20 @@ Install dependencies:
 yarn
 ```
 
-## Running the tests
+### Running the tests
 
 ```
 yarn test
 ```
 
-## Checking the documentation
+### Checking the documentation
 
 The instruction will create a sassdoc documentation and open it in your default browser
 
 ```
 yarn docs
 ```
-### Use this library
+## Use this library
 
 ```
 yarn add https://github.com/jf-swain/sass-library
