@@ -5,7 +5,7 @@ $c: (
   'default': #fff000
 );
 
-@include describe('color function') {
+@include describe('@function color') {
   @include it('should return a color by a name') {
     @include assert-equal(color('default', $c), #fff000);
   }
