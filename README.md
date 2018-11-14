@@ -33,6 +33,21 @@ The instruction will create a sassdoc documentation and open it in your default 
 ```
 yarn docs
 ```
+### Use this library
+
+```
+yarn add https://github.com/jf-swain/sass-library
+
+```
+
+How to use it :
+
+Import the `import.scss` file in front of your project in your scss file.
+
+
+```
+@import '[node_modules]/sass-library/import'
+```
 
 
 ## Built With
