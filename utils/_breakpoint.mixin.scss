@@ -1,0 +1,47 @@
+/// Mixin to manage breakpoint
+/// @name breakpoint
+/// @require {map} $map-breakpoint - Define theme-breakpoint in project
+///
+/// @param {string} $map - name of the breakpoint
+/// @example - scss input
+///   .item {
+///     @include breakpoint(beyond-medium) {
+///       margin: 0;
+///     }
+///   }
+///
+/// @example - css output
+///   @media screen and (min-width: 768px) {
+///     .item {
+///       margin: 0
+///     }
+///   }
+///
+/// @example - map-structure
+///   $map: (
+///     'beyond-medium: (min: 768px)
+///   );
+
+@mixin breakpoint($map, $map-breakpoint) {
+  $query: '';
+
+  @if type-of($map) == number {
+    $query: append($query, '(min-width: ' + $map + 'px)');
+  } @else {
+    @if map-has-key(map-get($map-breakpoint, $map), min) {
+      $query: append($query, '(min-width: #{map-get(map-get($map-breakpoint, $map), min)})');
+    }
+
+    @if map-has-key(map-get($map-breakpoint, $map), min) and map-has-key(map-get($map-breakpoint, $map), max) {
+      $query: append($query, 'and');
+    }
+
+    @if map-has-key(map-get($map-breakpoint, $map), max) {
+      $query: append($query, '(max-width: #{map-get(map-get($map-breakpoint, $map), max)})');
+    }
+  }
+
+  @media screen and #{$query} {
+    @content;
+  }
+}

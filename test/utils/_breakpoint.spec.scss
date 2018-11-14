@@ -1,0 +1,29 @@
+@import 'true';
+@import '../../utils/breakpoint.mixin';
+
+$map: (
+  'beyond-medium': (min: 768px)
+);
+
+@include describe('@mixin breakpoint') {
+  @include it('should return media query') {
+    @include assert {
+      @include output {
+        .class {
+          @include breakpoint('beyond-medium', $map) {
+            font-size: 22px;
+          }
+        }
+      }
+
+      @include expect {
+        @media screen and (min-width: 768px) {
+          .class {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,3 +1,7 @@
-/// Import Utils functions
+/// Import Utils
+// mixin
+@import './utils/breakpoint.mixin';
+
+// function
 @import './utils/color.function';
 @import './utils/font-name.function';
