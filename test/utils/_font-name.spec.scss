@@ -1,0 +1,22 @@
+@import 'true';
+@import '../../utils/_font-name.function';
+
+$map: (
+  'default': (
+    name: 'times'
+  ),
+  'primary': (
+    name: arial,
+    fallback: sans-serif
+  )
+);
+
+@include describe('@function font-name') {
+  @include it('should return a null with a debug') {
+    @include assert-equal(font-name('default', $map), null);
+  }
+
+  @include it('should return a font with fallback') {
+    @include assert-equal(font-name('primary', $map), (arial, sans-serif));
+  }
+}
