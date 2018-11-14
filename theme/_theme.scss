@@ -1,10 +1,23 @@
 ////
 /// @group Theme
 /// @author jf-swain
+/// A default theme map
+/// @todo To copu-y place in the project
 ////
 
 /// @name $theme-color
 $theme-color: (
-  'default': #000,
-  'primary: #fff'
+  'default': ,
+  'primary':
+);
+
+/// @ame $theme-font
+$map: (
+  'default': (
+    name: ,
+    fallback: ,
+    download: (
+      link: ,
+    )
+  )
 );
