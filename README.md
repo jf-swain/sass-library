@@ -26,6 +26,15 @@ yarn
 yarn test
 ```
 
+## Checking the documentation
+
+The instruction will create a sassdoc documentation and open it in your default browser
+
+```
+yarn docs
+```
+
+
 ## Built With
 
 * [SASS](https://sass-lang.com/) - The css preprocessor used
