@@ -1,5 +1,7 @@
 # Sass Library
 
+[![Build Status](https://travis-ci.org/jf-swain/sass-library.svg?branch=master)](https://travis-ci.org/jf-swain/sass-library)
+
 Library of sass function, mixin using theme/config files with map definition.
 
 ## Getting Started
