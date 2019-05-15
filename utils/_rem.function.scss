@@ -1,0 +1,26 @@
+/// Function rem
+/// Return rem from px
+/// @group utils
+/// @require {var} $root-size - root size html
+/// @param {number} $size-value - number of px
+/// @return {number} number in rem
+/// @example scss - use it
+///   .class {
+///     font-size: rem(12);
+///   }
+@function rem($size-value) {
+  @if type-of($size-value) == 'number' and not unitless($size-value) {
+    $store: $size-value;
+
+    $unit: $store * 0 + 1;
+
+    @if $unit != 1px {
+      @warn 'Invalid unit (rem function): #{$size-value} --> must be a px unit';
+      @return 'Invalid unit (rem function): #{$size-value} --> must be a px unit';
+    }
+
+    $size-value: $store / ($store * 0 + 1);
+  }
+
+  @return ($size-value / $root-size) * 1rem;
+}

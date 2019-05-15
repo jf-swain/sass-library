@@ -3,23 +3,23 @@
 /// @require {map} $map-breakpoint - Define theme-breakpoint in project
 ///
 /// @param {string} $map - name of the breakpoint
-/// @example - scss input
+/// @example scss - input
 ///   .item {
 ///     @include breakpoint(beyond-medium) {
 ///       margin: 0;
 ///     }
 ///   }
 ///
-/// @example - css output
+/// @example css - output
 ///   @media screen and (min-width: 768px) {
 ///     .item {
 ///       margin: 0
 ///     }
 ///   }
 ///
-/// @example - map-structure
+/// @example scss - map-structure
 ///   $map: (
-///     'beyond-medium: (min: 768px)
+///     'beyond-medium': (min: 768px)
 ///   );
 
 @mixin breakpoint($map, $map-breakpoint) {
