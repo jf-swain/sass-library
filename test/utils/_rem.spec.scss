@@ -1,0 +1,13 @@
+@import 'true';
+$root-size: 10;
+@import '../../utils/_rem.function';
+
+@include describe('@function rem') {
+  @include it('should return a rem unit') {
+    @include assert-equal(rem(12), 1.2rem);
+  }
+
+  @include it('should return an error') {
+    @include assert-unequal(rem(14vh), 1.4rem);
+  }
+}

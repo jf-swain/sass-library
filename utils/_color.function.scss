@@ -2,6 +2,10 @@
 /// @group utils
 /// @param {string} $var - colors name
 /// @param {variable} $map - map which define colors
+/// @example scss - use it
+///   .class {
+///     color: color($var, $map-name);
+///   }
 @function color($var, $map: $colors) {
   @if map-has-key($map, $var) {
     @return map-get($map, $var);
