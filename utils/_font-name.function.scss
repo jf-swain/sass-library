@@ -9,7 +9,7 @@
 ///       fallback: ('arial', 'sans-serif')
 ///     )
 ///   )
-@function font-name($name, $map) {
+@function font-name($name, $map: config-generate(font)) {
   @if map-get(map-get($map, $name), fallback) == null {
     @debug "The `#{$name}` font does not have fallback font";
     @return null;

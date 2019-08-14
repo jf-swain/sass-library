@@ -22,7 +22,7 @@
 ///     'beyond-medium': (min: 768px)
 ///   );
 
-@mixin breakpoint($map, $map-breakpoint) {
+@mixin breakpoint($map, $map-breakpoint: config-generate(breakpoint)) {
   $query: '';
 
   @if type-of($map) == number {

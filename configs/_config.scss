@@ -1,0 +1,8 @@
+/// @group config
+/// Define the map name to use in the project
+$config-map: (
+  'color': $theme-color,
+  'font': $theme-font,
+  'breakpoint': $theme-breakpoint,
+  'font-face': $theme-font,
+);

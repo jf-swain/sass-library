@@ -44,11 +44,11 @@ yarn add https://github.com/jf-swain/sass-library
 
 How to use it :
 
-Import the `import.scss` file in front of your project in your scss file.
+* Import the `import.scss` file in front of your project in your scss file.
 
 
 ```
-@import '[node_modules]/sass-library/import'
+@import '[node_modules]/sass-library/import' || @import '~/sass-libray/import'
 ```
 
 

@@ -8,7 +8,7 @@
 ///        link: ''
 ///      )
 ///    );
-@mixin font-face($map) {
+@mixin font-face($map: config-generate(font-face)) {
   @each $key, $value in $map {
     @if map-get($value, download) {
       font-face {

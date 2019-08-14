@@ -6,7 +6,7 @@
 ///   .class {
 ///     color: color($var, $map-name);
 ///   }
-@function color($var, $map: $colors) {
+@function color($var, $map: config-generate(color)) {
   @if map-has-key($map, $var) {
     @return map-get($map, $var);
   }

@@ -1,0 +1,4 @@
+/// config-generate
+@function config-generate($value, $map: $config-map) {
+  @return map-get($map, $value);
+}
