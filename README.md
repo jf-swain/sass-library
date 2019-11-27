@@ -48,7 +48,7 @@ How to use it :
 
 
 ```
-@import '[node_modules]/sass-library/import' || @import '~/sass-libray/import'
+@import '[node_modules]/sass-library/import' || @import '~sass-library/import'
 ```
 
 
