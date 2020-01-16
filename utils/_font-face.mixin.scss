@@ -11,13 +11,13 @@
 @mixin font-face($map: config-generate(font-face)) {
   @each $key, $value in $map {
     @if map-get($value, download) {
-      font-face {
+      @font-face {
         font-family: map-get($value, name);
-        src: url(map-get(map-get($value, download ), link) + '.eot');
-        src: url(map-get(map-get($value, download ), link) + '.eot?#iefix') format('embedded-opentype'),
-             url(map-get(map-get($value, download ), link) + '.woff') format('woff'),
-             url(map-get(map-get($value, download ), link) + '.ttf')  format('truetype'),
-             url(map-get(map-get($value, download ), link) + '.svg') format('svg');
+        src: url(map-get(map-get($value, download), link) + '.eot');
+        src: url(map-get(map-get($value, download), link) + '.eot?#iefix') format('embedded-opentype'),
+          url(map-get(map-get($value, download), link) + '.woff') format('woff'),
+          url(map-get(map-get($value, download), link) + '.ttf') format('truetype'),
+          url(map-get(map-get($value, download), link) + '.svg') format('svg');
       }
     }
   }
