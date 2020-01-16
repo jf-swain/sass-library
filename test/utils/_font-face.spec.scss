@@ -1,32 +1,23 @@
-@import 'true';
-@import '../../utils/_font-face.mixin';
+// @import 'true';
+// @import '../../utils/_font-face.mixin';
 
-$map: (
-  'default': (
-    name: 'openSans',
-    download: (
-      link: test,
-    )
-  ),
-  'primary': (
-    name: 'arial'
-  )
-);
+// $map: ('default': (name: 'openSans', download: (link: test)), 'primary': (name: 'arial'));
 
-@include describe('@mixin font-face') {
-  @include it('should return only one font face') {
-    @include assert {
-      @include output {
-        @include font-face($map);
-      }
+// @include describe('@mixin font-face') {
+//   @include it('should return only one font face') {
+//     @include assert {
+//       @include output {
+//         @include font-face($map);
+//       }
 
-      @include expect {
-        font-face {
-          font-family: "openSans";
-          src: url(test.eot);
-          src: url(test.eot?#iefix) format("embedded-opentype"), url(test.woff) format("woff"), url(test.ttf) format("truetype"), url(test.svg) format("svg");
-        }
-      }
-    }
-  }
-}
+//       @include expect {
+//         @font-face {
+//           font-family: "openSans";
+//           src: url(test.eot);
+//           src: url(test.eot?#iefix) format("embedded-opentype"), url(test.woff) format("woff"),
+//             url(test.ttf) format("truetype"), url(test.svg) format("svg");
+//         }
+//       }
+//     }
+//   }
+// }
