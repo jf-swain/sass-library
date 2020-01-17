@@ -8,6 +8,10 @@ Library of sass function, mixin using theme/config files with map definition.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+## Sassdoc
+
+A Sassdoc is created for this librairy, you could see it [here](http://sass-library.swain-creative.com/)
+
 ### Installing
 
 Cloning the repo or download it
