@@ -1,6 +1,9 @@
-# Sass Library
+<a href="https://codecov.io/gh/jf-swain/sass-library"><img src="https://badgen.net/codecov/c/jf-swain/sass-library/master" alt="Coverage Status"></a>
 
 [![Build Status](https://travis-ci.org/jf-swain/sass-library.svg?branch=master)](https://travis-ci.org/jf-swain/sass-library)
+
+# Sass Library
+
 
 Library of sass function, mixin using theme/config files with map definition.
 
