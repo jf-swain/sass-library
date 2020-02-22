@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/jf-swain/sass-library.svg?branch=master)](https://travis-ci.org/jf-swain/sass-library)
-[![Codecov](https://codecov.io/gh/jf-swain/sass-library/branch/master/graph/badge.svg)](https://codecov.io/gh/jf-swain/sass-library)
+<!-- [![Codecov](https://codecov.io/gh/jf-swain/sass-library/branch/master/graph/badge.svg)](https://codecov.io/gh/jf-swain/sass-library) -->
 
 # Sass Library
 
